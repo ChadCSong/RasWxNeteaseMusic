@@ -628,7 +628,7 @@ class NetEase(object):
         temp = []
         if dig_type == 'songs' or dig_type == 'fmsongs':
             for i in range(0, len(data)):
-                url, quality, play_time = geturl_new_api(data[i])
+                url, quality = geturl_new_api(data[i])
                 if data[i]['album'] is not None:
                     album_name = data[i]['album']['name']
                     album_id = data[i]['album']['id']
