@@ -644,7 +644,7 @@ class NetEase(object):
                     'album_id': album_id,
                     'mp3_url': url,
                     'quality': quality,
-                    'playTime': play_time
+                    'playTime': 0
                 }
                 if 'artist' in data[i]:
                     song_info['artist'] = data[i]['artist']
